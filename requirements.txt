@@ -6,3 +6,4 @@ openai
 playwright
 html2text
 tiktoken
+faiss-cpu
