@@ -11,6 +11,8 @@ from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 from langchain.llms import OpenAI
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
+import os
+os.system("playwright install")
 
 st.session_state["selected_urls"]=""
 openai_api_key = st.secrets["OPENAI_API_KEY"]
