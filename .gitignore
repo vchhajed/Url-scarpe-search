@@ -1,0 +1,36 @@
+# Ignore Streamlit's config and cache
+.streamlit/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+*.cache/
+
+# Jupyter Notebook
+*.ipynb_checkpoints/
+
+# Environment and installation directories
+env/
+venv/
+*.venv/
+lib/
+lib64/
+include/
+bin/
+share/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE generated files
+.idea/
+*.swp
+*.swo
+.vscode/
