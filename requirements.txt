@@ -5,3 +5,4 @@ langchain
 openai
 playwright
 html2text
+tiktoken
