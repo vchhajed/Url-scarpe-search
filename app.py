@@ -64,7 +64,7 @@ def main():
     selected_urls = st.multiselect("Choose links:", urls, default=urls,label_visibility="visible")
     st.write('You selected:', selected_urls)
     st.session_state["selected_urls"]=selected_urls
-
+    compression_retriever = caching(selected_urls)
     
     # Step 2: Prompt to search
     query = st.text_input("Enter your query:")
@@ -74,7 +74,7 @@ def main():
 
     if st.button("Search"):
         # Load and transform the documents
-        compression_retriever = caching(selected_urls)
+        
 
         compressed_docs = compression_retriever.get_relevant_documents(query)
         pretty_print_docs(compressed_docs)
